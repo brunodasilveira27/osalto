@@ -1,0 +1,194 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizzing: border-box;
+    outline: none;
+    overflow: hidden;
+
+}
+
+.telas-display {
+
+    width: 100%;
+    height: 100vh;
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info-pontos {
+
+    width: 100%;
+    height: 40px;
+    font-size: 15pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tela-jogar {
+
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+
+.tela-jogar h1 {
+
+    color: #00CED1;
+
+}
+
+.cenario {
+
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#87CEEB, #fff);
+    position: relative;
+    
+}
+
+.cenario-sol {
+
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.cenario-nuvem {
+
+    width: 100px;
+    position: absolute;
+}
+
+.cenario-nuvem1 {
+
+    top: 0;
+    left: 110%;
+
+}
+
+.cenario-nuvem2 {
+
+    top: 30px;
+    left: 130%;
+
+}
+
+.cenario-nuvem3 {
+
+    width: 200px;
+    top: 50px;
+    left: 100%;
+
+}
+
+.jogador {
+
+    width: 80px;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+
+}
+
+.salto {
+
+    animation-name: animarsalto;
+    animation-duration: 500ms;
+
+}
+
+@keyframes animarsalto {
+
+    0% {
+    
+        bottom: 80px;
+    
+    }
+    
+    20% {
+    
+        bottom: 220px;
+    
+    }
+    
+    40% {
+    
+        bottom: 260px;
+    
+    }
+    
+    60% {
+    
+        bottom: 260px;
+    
+    }
+    
+    70% {
+    
+        bottom: 260px;
+    
+    }
+    
+    100% {
+    
+        bottom: 100px;
+    
+    }
+
+}
+
+.obstaculo {
+
+    width: 40px;
+    height: 50px;
+    background: linear-gradient(#008000, #fff);
+    border: 1px solid;
+    font-size: 15pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+    left: 100%;
+
+}
+
+.cenario-chao {
+
+    width: 500px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.cenario-chao1 {
+
+    left: 0;
+
+}
+
+.cenario-chao2 {
+
+    left: 500px;
+
+}
+
+.cenario-chao3 {
+
+    left: 1000px;
+
+}
